@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script language="javascript" src="js/crossroads_bg.js"></script>
+<script>
+$(document).ready(function(){
+
+
+
+var aa = 
+{
+	"data":{
+		"1":{
+			"cdfx":"1",
+			"list":[
+				{
+					"CROSSINDEX":0.86,
+					"TJSJ":"08:55",
+					"XSFX":"1",
+					"CDLL":101,
+					"roadnum":"1"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"CDLL":103,
+					"roadnum":"2"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"TJSJ":"08:55",
+					"CDLL":12,
+					"XSFX":"0",
+					"roadnum":"3"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"TJSJ":"08:55",
+					"CDLL":102,
+					"XSFX":"2",
+					"roadnum":"4"
+				}
+			]
+		},
+		"2":{
+			"cdfx":"2",
+			"list":[
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":18,
+					"TJSJ":"08:55",
+					"XSFX":"1",
+					"roadnum":"1"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":66,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"2"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"3"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"2",
+					"roadnum":"4"
+				}
+			]
+		},
+		"3":{
+			"cdfx":"3",
+			"list":[
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":222,
+					"TJSJ":"08:55",
+					"XSFX":"1",
+					"roadnum":"1"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"2"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"3"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"4"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"2",
+					"roadnum":"5"
+				}
+			]
+		},
+		"4":{
+			"cdfx":"4",
+			"list":[
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"1",
+					"roadnum":"1"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"1",
+					"roadnum":"2"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"3"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"0",
+					"roadnum":"4"
+				},
+				{
+					"CROSSINDEX":0.86,
+					"CDLL":102,
+					"TJSJ":"08:55",
+					"XSFX":"2",
+					"roadnum":"5"
+				}
+			]
+		},
+		"CROSSID":"226",
+		"CROSSINDEX":3.94,
+		"CROSSNAME":"体育场路万泉路",
+		"avg":0,
+		"grade":15
+	},
+	"errorCode":0,
+	"errorText":""
+};
+	
+var n = getCarRoad(aa,'4');
+var w = getCarRoad(aa,'2');
+var s = getCarRoad(aa,'3');
+var e = getCarRoad(aa,'1');
+createIS(1,{'road':[2,2,2,2]},'cross12',480,n,w,s,e);
+
+
+});
+
+</script>
+<body>
+
+
+<div id="cross12"></div>
+
+
+</body>
+</html>
